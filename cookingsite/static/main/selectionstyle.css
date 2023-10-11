@@ -1,0 +1,28 @@
+.recipie-selection-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipie-selection-container h3{
+    font-weight: 100;
+}
+
+.recipe-selection-container > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.recipe-selection-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-size:larger;
+
+}
+
+.the-recipe a:hover {
+    color:chocolate;
+}

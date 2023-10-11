@@ -1,0 +1,104 @@
+.add-recipe-container .recipe-forms {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: ghostwhite;
+}
+.add-recipe-container input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+  font-size: medium;
+}
+
+.add-recipe-container input:focus {
+  width: 55%;
+}
+
+.recipe-forms {
+  display: block;
+ 
+}
+
+.recipe-forms textarea {
+  resize: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  margin: 8px 0;
+  padding: 6px 10px;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.recipe-forms button {
+  padding: 10px 50px;
+  border-style: hidden;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  transition: background-color 0.5s;
+  font-size: medium;
+  font-weight: 50;
+  
+}
+
+.recipe-forms button:hover {
+  background-color: rgb(205, 246, 173);
+}
+
+.recipe-forms legend {
+  padding: 10px 10px;
+  font-weight: 300;
+}
+
+.recipe-forms p, label {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  font-weight: 200;
+}
+
+.recipe-forms select {
+    -webkit-appearance: none;
+    -moz-appeaFrance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+.recipe-forms select:after {
+  content: "<>";
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+
+  top: 18px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+
+  position: absolute;
+  pointer-events: none;
+}

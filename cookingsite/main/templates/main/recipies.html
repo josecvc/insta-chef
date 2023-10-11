@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+
+{% block title %}Recipies{% endblock %}
+
+{% block head %}
+<link href='https://css.gg/search.css' rel='stylesheet'>
+{% load static %}
+<link rel="stylesheet" href={% static "main/selectionstyle.css" %}>
+{% endblock %}
+
+{% block content %}
+
+<div class = "recipe-selection-container">
+    <h3>Recipes:</h3>
+    <ul>
+        {% for recipe in meals %}
+            <li class="the-recipe"><a href={% url "recipe" recipe.id %}>{{recipe.mealName}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "main/base.html" %}
+
+{% block title %}Add Recipe{% endblock %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href={% static "main/add.css" %}>
+{% endblock %}
+
+{% block content %}
+<div class="recipe-forms">
+    <form method="post">
+        {% csrf_token %}
+        <div class="add-recipe-container">
+            <fieldset>
+                <legend>Add Recipe</legend>
+                <div id="name" name="add">
+                    <label for="recipeName">Name: </label>
+                    {{formrecipe.mealName}}<br><br>
+                </div>
+                <div id="ingredients">
+                    <label for="recipeIngreds">Ingredients (separate each with a colon): </label>
+
+                    {{formrecipe.ingredients}}<br><br>
+                </div>
+
+                <div id="steps">
+                    <label for="recipeSteps">Instructions (separate each with a colon): </label>
+                    {{formrecipe.steps}}<br><br>
+
+                </div>
+                <div id="timeToCook">
+                    <label for="recipeTime">Time: </label>
+                    {{formrecipe.timeToCook}}<br><br>
+
+                </div>
+                <div id="course">
+                    <label for="recipeCourse">Course: </label>
+                    {{formrecipe.course}}<br><br>
+
+                </div>
+
+                <div>
+                    <button type="submit">Submit!</button>
+
+                </div>
+    </form>
+
+    </fieldset>
+    <h3>Or...</h3>
+    <form method="post" , action="" name="scrape">
+        {% csrf_token %}
+        <div class="webscrape-container">
+            <fieldset>
+                <div id="url">
+                    <label for="page">Grab a recipe (currently only works with allrecipes.com): </label>
+                    {{formscrape.url}}<br><br>
+                </div>
+                <div>
+                    <button type="submit">Submit!</button>
+                </div>
+                <div>
+                    <p>When you submit, the data will be placed on the add recipe area</p>
+                </div>
+            </fieldset>
+
+        </div>
+    </form>
+
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "main/base.html" %}
+
+{% block title %}Whizz Up A Dish In Seconds{% endblock %}
+
+{% block head %}
+<link href='https://css.gg/search.css' rel='stylesheet'>
+{% load static %}
+<link rel="stylesheet" href={% static "main/homestyle.css" %} 
+{% endblock %}
+
+{% block content %}
+<!-- Recipies: Show by type of dish -->
+<div class="searchContainer">
+    <form action="">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="gg-search"></i></button>
+    </form>
+</div>
+<div class="featuredContainer">
+
+</div>
+
+<div>
+
+</div>
+{% endblock %}

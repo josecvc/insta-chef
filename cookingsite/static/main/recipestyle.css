@@ -1,0 +1,40 @@
+#meal-name h2 {
+    font-weight: 300;
+}
+
+.ingredient-container{
+    display:block;
+    flex-direction: column;
+
+}
+
+.ingredient-container ul {
+    text-decoration: none;
+    list-style-type: circle;
+
+}
+
+.the-ingredient {
+    display:flex;
+    flex-direction: column;
+    font-size: larger;
+    padding: 10px 10px;
+    font-weight:200;
+}
+
+.instructions-container {
+    nav-down: auto;
+}
+
+.the-instruction {
+    display:flex;
+    flex-direction: column;
+    font-size: larger;
+    padding: 10px 10px;
+    font-weight:200;
+}
+
+li::marker {
+    font-weight: 250;
+}
+
