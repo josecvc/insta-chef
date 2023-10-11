@@ -1,3 +1,3 @@
 # InstaChef
 
-Just a learning project to get comfortable with webdev again
+A new way to cook, simply tap away!
